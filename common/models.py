@@ -8,3 +8,6 @@ class Product(models.Model):
 	target_amount = models.IntegerField()
 	end_date = models.DateField()
 	amount_per_time = models.IntegerField()
+
+	def __str__(self):
+		return f'[{self.pk}]{self.title}'
