@@ -4,7 +4,7 @@ from django.db import models
 
 class Product(models.Model):
 	title = models.CharField(max_length=30)
-	description = TextField()
-	target_amount = IntegerField()
-	end_date = DateField()
-	amount_per_time = IntegerField()
+	description = models.TextField()
+	target_amount = models.IntegerField()
+	end_date = models.DateField()
+	amount_per_time = models.IntegerField()
