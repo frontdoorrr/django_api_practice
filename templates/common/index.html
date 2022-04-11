@@ -1,4 +1,9 @@
-
-<h1>
-	index.html 파일
-</h1>
+{% if product_list %}
+	<ul>
+		{% for product in product_list %}
+		<li>
+			<a href="/common/{{product.id }}">{{ product.title }} </a> : {{ product.description }}
+		</li>
+		{% endfor %}
+	</ul>
+{% endif %}
